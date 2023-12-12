@@ -1,0 +1,7 @@
+import "hashes/sha256/512bitPacked" as sha256packed;
+//用来计算哈希值。  设置计算出来的哈希值为"263561599766550617289250058199814760685",
+ // "65303172752238645975888084098459749904"
+def main(private field a, private field b, private field c, private field d) -> field[2] {
+    field[2] d = sha256packed([a, b, c, d]);
+    return d;
+}
